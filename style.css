@@ -1,0 +1,127 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: monospace;
+	font-size: 18px; 
+}
+p{
+	padding: 8px 0;
+}
+
+p:focus{
+	outline: none;
+}
+
+header{
+	height: 50px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: black;
+    padding-top: 30px;
+    text-align: center;
+    border: 1px dotted green;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#editor-section{
+	width: 700px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.para-wrapper{
+	border-bottom: 1px solid lightgrey;
+	margin: 10px 0;
+}
+
+#tooltip{
+	background: lightgoldenrodyellow;
+    padding: 5px;
+    height: 17px;
+    width: 68px;
+    position: absolute;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+#tooltip span {
+	cursor: pointer;
+    border-right: 1px solid black;
+    padding: 0 8px;
+    height: inherit;
+    font-size: 13px;
+}
+
+/* to hide the br tags created on contenteditable p tag after enter is pressed*/
+.para br{
+    display: none
+}
+
+
+#title{
+	font-size: 20px;
+	margin-bottom: 50px; 
+}
+
+#title{
+	color: black;
+}
+
+#title:empty:not(:focus)::before {
+  content: attr(data-placeholder);
+  color: lightgray;
+}
+
+.para-wrapper {
+	color: black;
+	min-height: 40px;
+	padding: 5px;
+	background: #e7e7e7;
+}
+
+
+.editing .para-wrapper {
+	background: white;
+}
+
+.editor-state{
+	height: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: lightblue;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: cursive;
+    margin-bottom: 10px; 
+    float: right;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.red{
+	color: red;
+}
+
+.done .para-wrapper {
+	background: #e7e7e7;
+}
+
+.editing .editor-state{
+	background: lightgreen;
+}
+
+#tooltip{
+	display: none;
+	position: absolute;
+}
+
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> HTML Editor</title>
+		<link rel="stylesheet" href="style.css"  />
+		<link rel="stylesheet" href="jquery-ui.min.css"  />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery-ui.min.js"></script>
+		<script type="text/javascript" src="editor.js"></script>
+		
+	</head>
+
+	<body>
+		<header>
+			Storyboard - Edit your story
+		</header>
+		<div id='tooltip'><span class='bold'>B</span><span class='underline'>U</span><span class='red'>R</span></div>
+		<div id="editor-section" >
+			<button class="editor-state">Start Editing</button>
+			<p id="title" contenteditable="true" data-placeholder="Title ..."></p>
+			<div class="para-wrapper">
+				<p class="para1 para"  placeholder="hskk"> </p>
+			</div>
+		</div>
+	</body>
+
+</html>
